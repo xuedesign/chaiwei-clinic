@@ -1,0 +1,576 @@
+/**********************************************************************************************
+
+	Title: CSS for xuedeisgn
+	Author: Elmo Wu (by xuedesign studio)
+	Date: 2014/09
+
+***********************************************************************************************
+		1 通用
+		2.基本結構
+		  2.1 頁面頂部
+		  2.2 網站主選單
+		  2.3 完美底部布局
+		  2.4 版權列
+		  2.5 頁面中間區塊
+		  2.6 側邊產品選單
+		  2.7 返回頂端紐
+		3.內頁結構
+		  3.1 首頁
+		  3.2 產品頁
+		  3.3 聯絡我們
+		     		
+***********************************************************************************************/
+
+/* 1. 通用 
+===============================================================================================*/
+body{
+	background:#fff;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#2c2c2c}
+a:link {text-decoration:none; color:#2c2c2c}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#ad3713}
+form{margin:0; padding:0}
+img{border:0}
+.clean{ clear:both}
+.hidden{ display:none}
+
+.tc{ letter-spacing:4px}
+.pleft_95{ padding-left:95px}
+.pright_18{ padding-right:18px}
+.blodorange{ font-weight:bold; color:#F07A18}
+.pic_right{ display:block; float:right; padding:0 0 10px 30px}
+.pic_left{ display:block; float:left; padding:0 30px 10px 0}
+.pic_center{ display:block; margin:0 auto}
+.txt-s{font-size:80%; vertical-align:sub}
+.txt-p{font-size:80%; vertical-align:super}
+.txt-orange{ color:#f07a18}
+
+@font-face{ font-family:NotoSansHant-Light; src:url(../fonts/NotoSansHant-Light.otf)}
+
+
+/* 2.基本結構
+===============================================================================================*/
+#wrap{ display:block; width:100%}
+
+/* 2.1 頁面頂部 */
+header{
+	display:block;
+	width:100%;
+	min-width:1240px;
+	height:135px;
+	background:url(../images/bg_header.png) repeat-x}
+#header_main{ 
+    display:block; 
+	width:1240px; 
+	margin:0 auto;
+	padding-top:44px}
+h1 a{ display:block;
+    float:left;
+    background:url(../images/logo.png) no-repeat;
+    width:404px;
+    height:79px;
+    text-indent:-9999px}
+#header_main h2{ display:none}	
+#box_topright{
+	display:block;
+	float:right;
+	position:relative}
+#box_topright p{
+	display:block;
+	background:url(../images/pic_tel.png) no-repeat;
+	width:285px;
+	height:34px;
+	text-indent:-9999px;
+	margin:0 0 20px 500px}			
+	
+/* 2.2 網站主選單 */
+nav{ 
+    display:block;
+	margin-left:105px}
+nav li{
+	display:inline-block; 
+	text-indent:-9999px}
+.nav_01, .nav_02, .nav_03, .nav_04, .nav_05, .nav_06{ 
+    display:block; 
+	height:28px; 
+	background:url(../images/bg_nav.png) no-repeat}
+.nav_01, .nav_02, .nav_03, .nav_04, .nav_05, .nav_06{ width:103px}	
+.nav_01{ background-position: 0 0}
+.nav_01:hover, .nav_01.navin{ background-position: 0 -33px}
+.nav_02{ background-position: 0 -66px}
+.nav_02:hover, .nav_02.navin{ background-position: 0 -99px}
+.nav_03{ background-position: 0 -132px}
+.nav_03:hover, .nav_03.navin{ background-position: 0 -165px}
+.nav_04{ background-position: 0 -198px}
+.nav_04:hover, .nav_04.navin{ background-position: 0 -231px}
+.nav_05{ width:159px; background-position: 0 -264px}
+.nav_05:hover, .nav_05.navin{ background-position: 0 -297px}
+.nav_06{ background-position: 0 -330px}
+.nav_06:hover, .nav_06.navin{ background-position: 0 -363px}
+
+/* 2.3 完美底部布局*/
+html, body, #wrap {height: 100%}
+body > #wrap {height: auto; min-height: 100%}
+#main_content{ padding-bottom:80px}
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden}
+.clearfix {display: inline-block}
+* html .clearfix { height: 1%}
+.clearfix {display: block}
+
+/* 2.4 版權列 */
+footer{ 
+    display:block;
+    width:100%;
+	min-width:1240px;
+	height:80px;
+    background: url(../images/bg_footer.png) repeat-x;
+    margin-top: -80px;
+	color:#FFF;
+	text-align:center}
+footer p{
+	text-align:center;
+	font-size:.813em;
+	line-height:28px;
+	letter-spacing:1px}
+footer ul{ padding-top:11px}	
+footer li{
+	display:inline;
+	font-size:.938em;
+	line-height:25px;
+	padding: 0 10px 0;
+	text-shadow: 1px 1px 5px #A0A0A0}
+footer a:link {text-decoration:none; color:#fff}
+footer a:visited {text-decoration:none; color:#fff}
+footer a:hover {text-decoration:underline; color:#84210D}			
+	 
+/* 2.5 頁面中間區塊 */	
+#container{
+	display:block;
+	width:100%}
+#wrap_c{
+	display:block;
+	width:1240px;
+	margin:0 auto}
+#box_content{
+	display:block;
+	position:relative;
+	float:right;
+	width:894px;
+	padding:35px 10px 0 32px}
+#bar_cookie{
+	display:block;
+	font-size:0.938em;
+	text-align:right;
+	line-height:18px;
+	letter-spacing:1px;
+	margin-bottom:30px}
+#bar_cookie span{ color:#f18018; font-weight:bold}
+#banner h3{
+    display:block;
+	width:907px;
+	height:159px;
+	border:1px solid #ecebeb;	 
+    text-indent:-9999px;
+	margin-bottom:20px}
+.ban-01{ background: url(../images/linear-guideway/pic_pbanner-01.jpg) no-repeat}
+.ban-02{ background: url(../images/linear-guideway/pic_pbanner-02.jpg) no-repeat}
+.ban-03{ background: url(../images/linear-guideway/pic_pbanner-03.jpg) no-repeat}
+.ban-04{ background: url(../images/linear-guideway/pic_pbanner-04.jpg) no-repeat}
+.ban-05{ background: url(../images/linear-guideway/pic_pbanner-05.jpg) no-repeat}
+.ban-06{ background: url(../images/linear-guideway/pic_pbanner-06.jpg) no-repeat}
+.ban-07{ background: url(../images/linear-guideway/pic_pbanner-07.jpg) no-repeat}				
+
+/* 2.6 側邊產品選單 */
+aside{
+	display:block;
+	float:left;
+	width:304px;
+	min-height:900px;
+	background:url(../images/bg_submenu.jpg) no-repeat;
+	padding-top:32px}
+aside h3{
+	display:block;
+	width:232px;
+	height:65px;
+	background:url(../images/title_submenu.png) no-repeat;
+	text-indent:-9999px}
+aside ul{ padding-left:10px}	
+aside li{
+	width:200px;
+	font-size:1em;
+	line-height:25px;
+	color:#4b4c4c;
+	border-bottom:1px dashed #d4d7d8;
+	padding:5px 0}
+aside li ul{ padding-left:30px}
+
+#toTop{
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/ui.totop.png) no-repeat left top}
+#toTopHover{
+	background:url(../images/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0)}
+#toTop:active, #toTop:focus { outline:none}
+
+/* 3.內頁結構
+===============================================================================================*/
+/*3-1 首頁*/
+#banner_slider{
+	display:block;
+	width:1163px;
+	height:278px;
+	margin:0 auto}
+#banner_slider h3{ display:none}	
+#box_profile{
+	display:block;
+	width:100%;
+	min-width:1162px;
+	height:288px;
+	background:url(../images/bg_profile.png) repeat-x}
+#main_profile{
+	display:block;
+	width:1162px;
+	margin:0 auto;
+	padding:55px 0 62px 0}
+#main_profile h3, #main_profile p{ 
+    display:block;
+	float:left}
+#main_profile h3{
+	background:url(../images/pic_sublogo.png) no-repeat;
+	width:124px;
+	height:138px;
+	text-indent:-9999px}
+#main_profile p{
+	font-size:0.938em;
+	line-height:25px;
+	text-shadow: 1px 1px 3px #fcf2bb}
+.profile_01{ width:445px; padding: 0 30px}
+.profile_02{ width:525px}
+
+#list_products, #list_products-02{ 
+    display:block;
+	margin:0 auto 10px auto}
+#list_products{ width:1162px; padding:40px 0}
+#list_products-02{ width:894px; padding:0 0 40px 0}		
+#list_products h3{
+	display:block;
+	background:url(../images/title_productlist.png) no-repeat;
+	width:1155px;
+	height:21px;
+	text-indent:-9999px;
+	margin-bottom:38px}
+#list_products h4, #list_products-02 h4{ display:none}
+.box_plist-01 li, .box_plist-03 li{ float:left; margin:0 8px 20px}
+.box_plist-01 li a, .box_plist-02 li a, #item_products li a{
+	display: block;
+	position:relative;
+	padding:8px;
+	border:1px solid #E6E6E6}
+.box_plist-01 li a{ width:545px}	
+.box_plist-03 li a{ width:411px}
+.box_plist-01 li a:hover, .box_plist-01 a:hover>img, .box_plist-02 li a:hover, .box_plist-02 a:hover>img, #item_products li a:hover, #item_products a:hover>img, .box_plist-03 li a:hover, .box_plist-03 a:hover>img, .box_plist-04 li a:hover, .box_plist-04 a:hover>img{ 
+    border:1px solid #ad3713}
+.box_plist-01 a>img, .box_plist-02 a>img, .box_plist-03 a>img, .box_plist-04 a>img, #item_products a>img{ border:1px solid #cacaca}
+.box_plist-01 a>div, .box_plist-02 a>div, #item_products a>div{
+	display:block;
+	position:absolute;
+	bottom:12px;
+	height:31px;
+	background:url(../images/bg_pplist-span.png) repeat-x}
+.box_plist-01 a>div{ width:544px}	
+.box_plist-03 a>div{ width:412px}
+.box_plist-01 a:hover>div, .box_plist-02 a:hover>div, .box_plist-03 a:hover>div, .box_plist-04 a:hover>div, #item_products a:hover>div{ 
+    background:url(../images/bg_pplist-span.png) 0 -31px}	
+.box_plist-01 h5, .box_plist-02 h5, #maincon .box_plist-03 h5, #maincon .box_plist-04 h5{
+	position:absolute;
+	bottom:3px;
+	font-size:1em;
+	letter-spacing:3px;
+	color:#FFF;
+	padding-left:35px}
+.box_plist-01 h5, .box_plist-02 h5{ line-height:25px; background:url(../images/icon_arrow.png) 15px 6px no-repeat}
+#maincon .box_plist-03 h5, #maincon .box_plist-04 h5{ line-height:18px; background:url(../images/icon_arrow.png) 15px 3px no-repeat}
+			
+.box_plist-02 li, .box_plist-04 li, #item_products li{ float:left; margin:0 8px 20px}
+.box_plist-02 li a{ width:183px}
+.box_plist-02 a>div{ width:184px}
+
+.box_plist-03 li a, .box_plist-04 li a{
+    display: block;
+	position:relative;
+	padding: 0 8px;
+	border:1px solid #E6E6E6}
+.box_plist-03 a>div{
+	display:block;
+	position:absolute;
+	bottom:15px;
+	height:31px;
+	background:url(../images/bg_pplist-span.png) repeat-x}
+.box_plist-03 img, .box_plist-04 img{ width:100%}
+
+.box_plist-04 a>div{
+	display:block;
+	position:absolute;
+	bottom:15px;
+	height:31px;
+	background:url(../images/bg_pplist-span.png) repeat-x}
+.box_plist-04 li a{ width:175px}
+.box_plist-04 a>div{ width:176px}
+ 
+
+/*3-2 產品頁*/
+#box_tab{ display:block; margin-bottom:45px}
+#box_tab li a{
+	display: block;
+	float:left;
+	background:url(../images/btn_tab.png) no-repeat;
+	width:145px;
+	height:41px;
+	text-align:center;
+	color:#FFF;
+	font-size:0.938em;
+	line-height:40px;
+	margin-right:30px;
+	text-shadow: 0 0 5px #9C9C9C;
+	letter-spacing:1px}
+#box_tab li a:hover, #box_tab li a.tabin{ 
+    text-decoration:none; 
+	background:url(../images/btn_tab.png) 0 -41px no-repeat; 
+	text-shadow:0 0 5px #E2912A}
+#box_tab li a.tabin{ font-weight:bold}
+#maincon{ 
+    display:block; 
+	margin-bottom:30px}
+#maincon h4, #item_products h4{
+	font-family:"NotoSansHant-Light","微軟正黑體","Microsoft JhengHei";
+	font-size:1.188em;
+	line-height:28px;
+	color:#FFF;		
+	letter-spacing:13px;
+	padding-left:5px}
+.txtlong-4, .txtlong-5, .txtlong-6, .txtlong-7, .txtlong-8, .txtlong-9, .txtlong-12{
+	display:block;
+	background: url(../images/bg_ph4.png) no-repeat;
+	height:28px;
+	margin-bottom:30px}	
+.txtlong-4{ width:128px; width:131px !important;}
+.txtlong-5{ width:160px; width:163px; background-position: 0 -28px}	
+.txtlong-6{ width:192px; width:195px !important; background-position: 0 -56px}	
+.txtlong-7{ width:224px; width:227px !important; background-position: 0 -84px}	
+.txtlong-8{ width:256px; width:260px !important; background-position: 0 -112px}
+.txtlong-9{ width:290px; width:294px !important; background-position: 0 -140px}		
+.txtlong-12{ width:388px; width:392px !important; background-position: 0 -168px}				
+#maincon h5{
+	font-size:1em;
+	line-height:25px;
+	color:#f07a18;
+	padding-bottom:5px}
+#maincon h5 span{ font-size:0.813em; color:#999; font-weight:normal}
+#maincon h6{ font-size:0.938em; padding-bottom:10px}	
+#maincon p{
+	font-size:0.938em;
+	line-height:25px;
+	padding-bottom:30px}
+#maincon img{ display:block; margin:15px 0}	
+
+#item_products{ display:block; margin-bottom:30px}
+#item_products li a{ width:115px}
+#item_products a>div{ width:116px}
+#item_products img{ width:115px}
+#item_products h5{
+	width:121px;
+	position:absolute;
+	bottom:3px;
+	font-size:0.938em;
+	line-height:25px;
+	color:#FFF;
+	text-align:center}
+#product_note{ display:block; margin-bottom:50px}
+.main_note{
+	display:block;
+	float: left;
+	width:645px;
+	padding-right:50px}
+.main_note h5{ font-size:1.125em; color:#f07a18; padding-bottom:15px}	
+.main_note p{
+	font-size:0.938eml;
+	line-height:25px;
+	padding-bottom:15px}
+.download{
+	display:block;
+	position:absolute;
+	top:260px;
+	right:0;
+	/*float:right;*/
+	width:194px;
+	min-height:180px;
+	border:1px solid #ABAAAD;
+	background:url(../images/bg_cloud.png) center 50px no-repeat}
+.download h4{
+	display:block;
+	padding:8px 0;
+	text-align:center;
+	color:#FFF;
+	background:#c1c5ca}	
+.download li{
+	font-size:0.938em;
+	line-height:25px;
+	border-bottom:1px dashed #4b4a4a;
+	background:url(../images/icon_arrow.png) 0 5px no-repeat;
+	margin:10px 15px;
+	padding: 0 0 5px 20px}
+.list-type-01, .list-type-02{ display:block; padding-bottom:30px}	
+.list-type-01 li{
+	display:inline;
+	background:url(../images/icon_arrow.png) 0 5px no-repeat;
+	padding-left: 18px;
+	margin-right:20px;
+	font-size:0.938em;
+	line-height:25px}
+.list-type-02 li{
+	background:url(../images/icon_arrow.png) 0 13px no-repeat;
+	padding:8px 0 8px 18px;
+	font-size:0.938em;
+	line-height:25px;
+	border-bottom:1px dashed #CCC}
+#box_note p, #maincon .box_note p{
+	font-size:0.813em;
+	font-style:italic;
+	color:#999}
+#maincon .box_note p{ padding:0; margin:-15px 0 15px}	
+.box_pic{ display:block; margin-bottom:10px; padding-left:30px}
+.boxpic_left{ 
+    display:block;
+	float:left}
+#maincon .boxpic_left img{ margin:0; padding:0  }	
+.boxpic_right, .boxpic_right-02{
+	display:block;
+	float:left;
+	width:470px;
+	background:#EAEAEA;
+	padding:15px 15px 0;
+	border-top:1px solid #D9D9D9;
+	border-bottom:1px solid #D9D9D9;
+	border-right:1px solid #D9D9D9}
+.boxpic_right{ min-height:163px}	
+.boxpic_right-02{ min-height:233px}	
+.boxpic_right strong, .boxpic_right-02 strong{ font-weight:bold; color:#F07A18}
+#maincon .boxpic_right-02 p{padding-bottom:15px}
+
+/*滾珠螺桿*/
+.ban-bs01{ background: url(../images/ballscrew/pic_bsbanner-01.jpg) no-repeat}
+.ban-bs02{ background: url(../images/ballscrew/pic_bsbanner-02.jpg) no-repeat}
+.ban-bs03{ background: url(../images/ballscrew/pic_bsbanner-03.jpg) no-repeat}	
+.ban-bs04{ background: url(../images/ballscrew/pic_bsbanner-04.jpg) no-repeat}	
+.ban-bs05{ background: url(../images/ballscrew/pic_bsbanner-05.jpg) no-repeat}	
+.ban-bs06{ background: url(../images/ballscrew/pic_bsbanner-06.jpg) no-repeat}	
+.ban-bs07{ background: url(../images/ballscrew/pic_bsbanner-07.jpg) no-repeat}
+.ban-bs08{ background: url(../images/ballscrew/pic_bsbanner-08.jpg) no-repeat}
+
+/*軸承系列*/
+#list_products-03{ width:888px; padding:0 3px 40px}
+#list_products-03 ul{}
+#list_products-03 li{
+	display:block;
+	float:left;
+	width:180px;
+	margin:0 21px 20px}
+#list_products-03 a>span{
+	display:block;
+	width:174px;
+	height:168px;
+	padding:0 8px 8px;
+	border:1px solid #E6E6E6}
+#list_products-03 a:hover>span{ border:1px solid #ad3713}	
+#list_products-03 a>h5{ line-height:30px; color:#464748; text-align:center}
+#list_products-03 a:hover>h5{ color:#ad3713/*#f07a18*/}	
+#list_products-03 a:hover{ text-decoration:none}
+
+.ban-b01{ background: url(../images/bearings/pic_bbanner-01.jpg) no-repeat}
+.ban-b02{ background: url(../images/bearings/pic_bbanner-02.jpg) no-repeat}
+.ban-b03{ background: url(../images/bearings/pic_bbanner-03.jpg) no-repeat}
+.ban-b04{ background: url(../images/bearings/pic_bbanner-04.jpg) no-repeat}
+.ban-b05{ background: url(../images/bearings/pic_bbanner-05.jpg) no-repeat}
+.ban-b06{ background: url(../images/bearings/pic_bbanner-06.jpg) no-repeat}
+.ban-b07{ background: url(../images/bearings/pic_bbanner-07.jpg) no-repeat}
+.ban-b08{ background: url(../images/bearings/pic_bbanner-08.jpg) no-repeat}
+.ban-b09{ background: url(../images/bearings/pic_bbanner-09.jpg) no-repeat}
+.ban-b10{ background: url(../images/bearings/pic_bbanner-10.jpg) no-repeat}
+.ban-b11{ background: url(../images/bearings/pic_bbanner-11.jpg) no-repeat} 
+.ban-b12{ background: url(../images/bearings/pic_bbanner-12.jpg) no-repeat}
+.ban-b13{ background: url(../images/bearings/pic_bbanner-13.jpg) no-repeat}
+.ban-b14{ background: url(../images/bearings/pic_bbanner-14.jpg) no-repeat}
+
+/*線性模組*/
+.ban-ms{ background:url(../images/mono-stage/pic_msbanner.jpg) no-repeat}
+.my_tab-p td{ font-size:0.875em}
+.my_tab-n{width:100%; border:1px solid #C5C5C5; margin:10px 0 30px}
+.my_tab-n th{
+	font-size:0.813em;
+	line-height:22px;
+	border:1px solid #CFCFCF;
+	background:#F2F2F2;
+	text-align:center;
+	vertical-align:middle;
+	padding:5px}	
+.my_tab-n td{
+	font-size:0.813em;
+	line-height:22px;
+	text-align:center;
+	vertical-align:middle;
+	padding:0;
+	border-collapse: collapse; 
+	border-spacing: 1px;
+	border:1px solid #CFCFCF}
+
+/*轉造級滾珠螺桿*/
+.ban-rb01{ background:url(../images/rolled-ballscrews/pic_rbbanner.jpg) no-repeat}
+
+/*軸心式滑軌*/
+.ban-d01{ background:url(../images/dualshaft-of-slilde-guide/pic_dbanner.jpg) no-repeat}							
+
+/*3-3 聯絡我們*/
+#company_info{
+	display:block;
+	float:left;
+	width:320px;
+	padding-right:30px}
+#company_info ul{ display:block; padding:5px 0 20px 0}
+#company_info li{
+	font-size:0.938em;
+	line-height:30px;
+	border-bottom:1px dashed #D7D7D7;
+	padding:5px 0}
+#company_info img{ display:block; width:231px; padding:0; margin:0}
+
+#box_map{
+	display:block;
+	float:right;
+	width:490px;
+	height:577px;
+	border:1px solid #D7D7D7;
+	padding:10px 0 0 10px}
+						   
