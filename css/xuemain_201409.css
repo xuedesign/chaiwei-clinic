@@ -100,7 +100,100 @@ h1 a{
 .iconlink-04 a{ background:url(../images/icon_link.png) 0 -93px no-repeat}		
 	
 /* 2.2 網站主選單 */
+nav{ display:block}
+#topnav {
+	display:block;
+	float:left;
+	width: 100%;/*1037px*/ 
+	margin: 17px 0 0 0; 
+	padding: 0;
+	list-style: none;
+	font-size: 1em}
+#topnav li {
+	position: relative;
+	float: left;
+	margin: 0; 
+	padding: 0}
+#topnav li a {
+	display:block;
+	float: left;
+	width:129px;
+	height:41px; 
+	text-indent: -9999px;
+	background:url(../images/bg_nav.png) no-repeat}
+#topnav a.nav_01 { background-position: 0 0}
+#topnav a:hover.nav_01 { background-position: 0 -46px}
+#topnav a.nav_02 { background-position: -129px 0}
+#topnav a:hover.nav_02 { background-position: -129px -46px}
+#topnav a.nav_03 { background-position: -258px 0}
+#topnav a:hover.nav_03 { background-position: -258px -46px}
+#topnav a.nav_04 { background-position: -387px 0}
+#topnav a:hover.nav_04, #topnav a:focus.nav_04 { background-position: -387px -46px}
+#topnav a.nav_05 { background-position: -516px 0}
+#topnav a:hover.nav_05 { background-position: -516px -46px}
+#topnav a.nav_06 { background-position: -645px 0}
+#topnav a:hover.nav_06 { background-position: -645px -46px}
+#topnav a.nav_07 { background-position: -774px 0}
+#topnav a:hover.nav_07 { background-position: -774px -46px}
+#topnav a.nav_08 { background-position: -903px 0}
+#topnav a:hover.nav_08 { background-position: -903px -46px}
 
+#topnav li .sub {
+	display: none;
+	position: absolute;	
+	float: left;
+	top: 44px; 
+	left:0;
+	background:#fff;
+	padding: 20px 0 20px;
+	border:1px solid #CCC;
+	/*--Bottom right rounded corner--*/
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px}
+#topnav li .sub.service{ left: -129px; padding: 20px 20px 20px}	
+#topnav li .row {clear: both; float: left; width: 100%; margin-bottom: 10px}	
+#topnav li .sub ul{
+	float: left;
+	width: 149px;
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+	/*border-right:1px solid #CCC*/}
+#topnav .sub ul li {
+	width: 100%;
+	color: #fff;
+	text-align:center}
+#topnav .sub ul li h2 {
+	padding:0 0 20px 0;  
+	margin: 0;
+	background:url(../images/bg_navh2.png) 25px 30px no-repeat;
+	font-size: 1em;
+	font-weight: normal;
+	color:#307a00}
+#topnav .sub ul li a {
+	display: block;
+	float: none; 
+	height: auto;
+	text-indent: 0; /*--Reset text indent--*/
+	background:none;
+	padding: 7px 5px 7px 15px;
+	text-decoration: none;
+	color: #9e9e9d}
+#topnav .sub ul li a:hover {color:#f50}
+#topnav .sub .short_item{
+	width:129px;
+	padding:0;
+	margin:0}
+#topnav .sub .short_item li a{
+	margin:0;
+	padding:7px 0}
+#topnav .sub .short_item li h2{ 
+    background:url(../images/bg_navh2.png) 10px 30px no-repeat} 	
 
 /* 2.3 完美底部布局*/
 html, body, #wrap {height: 100%}
@@ -151,7 +244,7 @@ footer li{
 	float:right;
 	width:50%;
 	text-align:right;
-	padding-top:25px}
+	padding-top:20px}
 .fmain_right a{ text-decoration:none; color:#fff}
 .fmain_right a:hover{ text-decoration:none; color:#f50}				
 			

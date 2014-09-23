@@ -34,11 +34,99 @@
                           <li class="iconlink-01"><a href="https://www.facebook.com/cw23250227" title="前往采葳的FB粉絲專頁" rel="external">FB粉絲團</a></li>
                           <li class="iconlink-02"><a href="https://plus.google.com/u/0/b/107179778419657766208/107179778419657766208/posts" title="前往采葳的G+粉絲專頁" rel="external">Google+專頁</a></li>
                           <li class="iconlink-03"><a href="#" title="加入采葳的Line帳號">Line官方帳號</a></li>
-                          <li class="iconlink-04"><a href="#" title="聯絡我們">聯絡我們</a></li>
+                          <li class="iconlink-04"><a href="mailto:123@123.com" title="聯絡我們">聯絡我們</a></li>
                       </ul>
                  </div>
                  <br class="clean">
-             </div>
+             
+             
+                 <nav><!-- 網站主選單 -->
+                       <ul id="topnav">
+                          <li>
+                             <a href="index.html" class="nav_01">首頁</a>
+                          </li>
+                          <li>
+                             <a href="content/about.html" class="nav_02">關於采葳</a>
+                          </li>
+                          <li>
+                             <a href="#" class="nav_03">最新消息</a>
+                             <div class="sub">
+                                 <ul class="short_item">
+                                     <li><h2>類別</h2></li>
+                                     <li><a href="content/news_list.html">活動消息</a></li>
+                                     <li><a href="content/news_list.html">媒體報導</a></li>
+                                 </ul>
+                             </div>
+                          </li>
+                          <li>
+                             <a href="#" class="nav_04">服務項目</a>
+                             <div class="sub service">
+                                  <ul>
+                                      <li><h2>微整形</h2></li>
+                                      <li><a href="content/service.html">晶亮瓷</a></li>
+                                      <li><a href="#">玻尿酸</a></li>
+                                      <li><a href="#">肉毒桿菌</a></li>
+                                      <li><a href="#">水微晶</a></li>
+                                      <li><a href="#">Sculptra舒顏萃</a></li>
+                                      <li><a href="#">4D埋線</a></li>
+                                  </ul>
+                                  <ul>
+                                      <li><h2>雷射光療</h2></li>
+                                      <li><a href="#">淨膚雷射</a></li>
+                                      <li><a href="#">飛梭雷射</a></li>
+                                      <li><a href="#">櫻花雷射</a></li>
+                                      <li><a href="#">亞歷山大除毛</a></li>
+                                      <li><a href="#">CPT電波拉皮</a></li>
+                                      <li><a href="#">脈衝光</a></li>
+                                      <li><a href="#">極線音波拉提</a></li>
+                                  </ul>
+                                  <ul>
+                                      <li><h2>美體雕塑</h2></li>
+                                      <li><a href="#">Liposonix立塑</a></li>
+                                      <li><a href="#">吸脂機</a></li>
+                                      <li><a href="#">冷凍減脂</a></li>
+                                  </ul>
+                                  <ul>
+                                      <li><h2>美肌保養</h2></li>
+                                      <li><a href="#">果酸換膚</a></li>
+                                      <li><a href="#">杏仁酸換膚</a></li>
+                                      <li><a href="#">超聲波美膚導入</a></li>
+                                      <li><a href="#">醫美點滴</a></li>
+                                  </ul>
+                                  <ul>
+                                      <li><h2>整形外科</h2></li>
+                                      <li><a href="#">割(縫)雙眼皮</a></li>
+                                      <li><a href="#">隆鼻手術</a></li>
+                                      <li><a href="#">拉皮</a></li>
+                                      <li><a href="#">抽脂</a></li>
+                                      <li><a href="#">自體脂肪豐胸</a></li>
+                                      <li><a href="#">果凍隆乳</a></li>
+                                  </ul>
+                             </div>     
+                          </li>
+                          <li>
+                             <a href="content/doctor_list.html" class="nav_05">醫師團隊</a>
+                          </li>
+                          <li>
+                             <a href="content/clinic.html" class="nav_06">門診資訊</a>
+                          </li>
+                          <li>
+                             <a href="#" class="nav_07">媒體名人</a>
+                             <div class="sub">
+                                 <ul class="short_item">
+                                     <li><h2>類別</h2></li>
+                                     <li><a href="content/media_list.html">藝人模特兒</a></li>
+                                     <li><a href="#">網路名人</a></li>
+                                     <li><a href="#">素人分享</a></li>
+                                 </ul>
+                             </div>
+                          </li>
+                          <li>
+                             <a href="#" class="nav_08">預約諮詢</a>
+                          </li>
+                        </ul>
+                   </nav>
+              </div>
          </header>
          
          
@@ -72,6 +160,10 @@
 
 
 <script src="script/jquery.hoverIntent.minified.js"></script>
+<script>
+$(document).ready(function(){$("ul#topnav li .sub").css({opacity:"0"});$("ul#topnav li").hoverIntent({sensitivity:2,interval:100,over:function(){$(this).find(".sub").stop().fadeTo("fast",1).show();(function(a){jQuery.fn.calcSubWidth=function(){rowWidth=0;a(this).find("ul").each(function(){rowWidth+=a(this).width()})}})(jQuery);if(0<$(this).find(".row").length){var a=0;$(this).find(".row").each(function(){$(this).calcSubWidth();rowWidth>a&&(a=rowWidth)});$(this).find(".sub").css({width:a});$(this).find(".row:last").css({margin:"0"})}else $(this).calcSubWidth(),
+$(this).find(".sub").css({width:rowWidth})},timeout:500,out:function(){$(this).find(".sub").stop().fadeTo("fast",0,function(){$(this).hide()})}})});
+</script>
 <script src="script/jquery.flexslider.js"></script>
 <script src="script/jquery.lazyload.js"></script>
 <script src="script/jquery.ui.totop.js"></script>

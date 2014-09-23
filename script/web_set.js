@@ -63,4 +63,8 @@ prefs.setCharPref('browser.startup.homepage',vDomainName);
 alert('您的瀏覽器不支持自動自動設置首頁, 請使用瀏覽器菜單手動設置!');
 }
 }
-}	    	  
+}
+
+//網站主選單
+
+	    	  
