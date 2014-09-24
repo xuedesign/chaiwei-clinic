@@ -27,7 +27,7 @@
 /* 1. 通用 
 ===============================================================================================*/
 body{
-	background:#fff;
+	background: url(../images/bg_site.png) repeat-x #ebebeb;
 	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:22px;
@@ -101,6 +101,7 @@ h1 a{
 	
 /* 2.2 網站主選單 */
 nav{ display:block}
+nav h2{ display:none}
 #topnav {
 	display:block;
 	float:left;
@@ -144,6 +145,7 @@ nav{ display:block}
 	float: left;
 	top: 44px; 
 	left:0;
+	z-index:700;
 	background:#fff;
 	padding: 20px 0 20px;
 	border:1px solid #CCC;
@@ -168,7 +170,7 @@ nav{ display:block}
 	width: 100%;
 	color: #fff;
 	text-align:center}
-#topnav .sub ul li h2 {
+#topnav .sub ul li h3{
 	padding:0 0 20px 0;  
 	margin: 0;
 	background:url(../images/bg_navh2.png) 25px 30px no-repeat;
@@ -192,7 +194,7 @@ nav{ display:block}
 #topnav .sub .short_item li a{
 	margin:0;
 	padding:7px 0}
-#topnav .sub .short_item li h2{ 
+#topnav .sub .short_item li h3{ 
     background:url(../images/bg_navh2.png) 10px 30px no-repeat} 	
 
 /* 2.3 完美底部布局*/
@@ -246,14 +248,10 @@ footer li{
 	text-align:right;
 	padding-top:20px}
 .fmain_right a{ text-decoration:none; color:#fff}
-.fmain_right a:hover{ text-decoration:none; color:#f50}				
-			
+.fmain_right a:hover{ text-decoration:none; color:#f50}					
 	 
 /* 2.5 頁面中間區塊 */	
-#container{
-	display:block;
-	width:100%}
-				
+#container{ display:block; width:100%}				
 
 /* 2.6 側邊產品選單 */
 aside{}
@@ -285,8 +283,125 @@ aside{}
 /* 3.內頁結構
 ===============================================================================================*/
 /*3-1 首頁*/
-
- 
+#main_index{
+	display:block;
+	width:1106px;
+	background:#fff;
+	margin:0 auto;
+	padding-top:22px}
+#banner_slider{
+	display:block;
+	width:1059px;
+	margin:0 auto}
+#banner_slider h2{ display:none}	
+#beauty_diary{
+	display:block;
+	width:100%}
+#box_muti{
+	display:block;
+	width:1059px;
+	margin:0 auto;
+	padding:30px 0}
+.box_inews, .box_iclinic{
+	display:block;
+	float:left;
+	width:319px;
+	background:url(../images/bg_lineh3.png) 10px 35px no-repeat }
+.box_inews h3, .box_iclinic h3, .box_imedia h3{
+	font-size:1.063em;
+	font-weight:normal;
+	line-height:30px;
+	color:#848383;
+	padding-left:15px;
+	letter-spacing:1px}	
+.box_inews ul, .box_iclinic ul{
+	display:block;
+	padding:20px;
+	border-right:1px solid #eeeeee}
+#box_muti .box_inews li a, #box_muti .box_iclinic li a{
+	display:block;
+	width:280px;
+	font-size:0.938em;
+	line-height:40px;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap}
+.box_imedia{
+	display:block;
+	float:right;
+	width:419px;
+	min-height:200px;
+	background:url(../images/bg_lineh3-1.png) 10px 35px no-repeat}
+.info_imedia{
+	display:block;
+	padding:25px 0 0 30px}
+#ad_list{
+	display:block;
+	padding-top:30px}
+#ad_list h3{ display:none}
+#ad_list li{
+	display:inline;
+	margin-left:18px}
+	
+#beauty_diary{
+	display:block;
+	width:100%;
+	background:#ebebeb}
+#beauty_diary .title_diary{
+	display:block;
+	width:100%;
+	height:55px;
+	background:#e0dddd;}
+#beauty_diary h3{
+	display:block;
+	width:1059px;
+	font-size:1.028em;
+	line-height:55px;
+	color:#a69685;
+	text-shadow:1px 1px 0 #EAE8E8;
+	margin:0 auto}	
+.main_diary{
+	display:block;
+	width:1280px;
+	margin:0 auto}
+.main_diary li{
+	display: block;
+	float:left;
+	position:relative;
+	width:258px;
+	min-height:285px;
+	background:#FFF;
+	margin:15px 10px;
+	padding:15px 17px}
+.main_diary .cover_diary{
+	display:block;
+	width:258px;
+	height:150px;
+	overflow:hidden;
+	margin-bottom:10px}
+.main_diary .cover_diary img{
+	display:block;
+	width:258px}
+.main_diary h4{
+	display:block;
+	font-size:1em;
+	font-weight:normal;
+	line-height:25px;
+	color:#66B5B2;
+	margin-bottom:10px}
+.main_diary p{
+	display:block;
+	height:45px;
+	overflow:hidden;
+	font-size:0.813em;
+	line-height:22px;}
+.main_diary	.btn_more{
+	display:block;
+	position:absolute;
+	bottom:10px;
+	right:15px;
+	font-size:0.813em;
+	line-height:25px}							 
 
 /*3-2 產品頁*/
 						
