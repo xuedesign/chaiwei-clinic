@@ -185,7 +185,7 @@ nav h2{ display:none}
 	background:none;
 	padding: 7px 5px 7px 15px;
 	text-decoration: none;
-	color: #9e9e9d}
+	color: #252136 /*#9e9e9d*/}
 #topnav .sub ul li a:hover {color:#f50}
 #topnav .sub .short_item{
 	width:129px;
@@ -304,6 +304,7 @@ aside{}
 	padding:30px 0}
 .box_inews, .box_iclinic{
 	display:block;
+	position:relative;
 	float:left;
 	width:319px;
 	background:url(../images/bg_lineh3.png) 10px 35px no-repeat }
@@ -313,7 +314,15 @@ aside{}
 	line-height:30px;
 	color:#848383;
 	padding-left:15px;
-	letter-spacing:1px}	
+	letter-spacing:1px}
+.box_inews .btn_imore , .box_iclinic .btn_imore{
+	display:block;
+	position:absolute;
+	top:5px;
+	right:15px;
+	font-size:0.813em;
+	padding:2px 8px;
+	background:#EEE}		
 .box_inews ul, .box_iclinic ul{
 	display:block;
 	padding:20px;
@@ -401,7 +410,97 @@ aside{}
 	bottom:10px;
 	right:15px;
 	font-size:0.813em;
-	line-height:25px}							 
+	line-height:25px}
+	
+.btn_message a{
+	display:block;
+	position:fixed;
+	top:25%;
+	right:0;
+	width:34px;
+	height:222px;
+	background:url(../images/btn_message.png) no-repeat;
+	text-indent:-9999px}
+#box_linefriend{
+	display:none;
+	width:300px;
+	height:400px;
+	text-align:center}
+#box_linefriend h3{
+	font-size:1.25em;
+	line-height:35px;
+	color:#307A00}
+#box_linefriend p{
+	font-size:0.938em;
+	line-height:25px;
+	margin-bottom:15px}
+#box_message{
+	display: none;
+	width:800px;
+	padding-bottom:20px}
+#box_message h3{
+	font-size:1.25em;
+	line-height:35px;
+	text-align:center;
+	padding-bottom:10px;
+	border-bottom:1px solid #333}
+#box_message h3 span{
+	font-size:0.75em;
+	color:#0B69CB;
+	font-weight:normal}
+.box_message{
+	width:750px;
+	margin:15px auto 0 auto}
+.box_message tr{ border-bottom:1px dashed #D7D7D7}	
+.box_message td{
+	padding:10px;
+	font-size:0.938em;
+	vertical-align:middle}
+.box_message .ttd{
+	width:16%; 
+    text-align:right;
+	vertical-align:middle}
+.box_message .pot_star{ color:#f50; font-weight:bold}
+.box_message img{ vertical-align: middle; margin-right:15px}
+.text_area{
+	display: inline-block;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:0.938em;
+	letter-spacing:1px;
+	border:1px solid #999;
+	padding:8px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+#box_message textarea{
+	width:350px;
+    font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:.938em}	
+.w78{ width:78px}
+.w100{ width:100px}
+.w350{ width:350px}
+.box_buttom{
+	display:block;
+	width:400px;
+	margin:0 auto;
+	padding:15px 0;
+	text-align:center}
+.btn_empty{
+	display:inline-block;
+	padding:5px 30px;
+	margin:0 10px;
+	background:#6DBA3B;
+	border:none;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	font-size:0.938em;
+	line-height:30px;
+	letter-spacing:1px;
+	color:#FFF;
+	cursor:pointer}
+.btn_empty:hover{ background:#317B00}	
+	 																 
 
 /*3-2 產品頁*/
 						

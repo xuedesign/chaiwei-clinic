@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/reset.css"/>
 <link rel="stylesheet" href="css/xuemain_201409.css"/>
 <link rel="stylesheet" href="css/flexslider.css"/>
+<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,7 +34,7 @@
                           <li class="pr_10"><a href="#" onclick="addfavorite()" title="加入我的最愛">加入我的最愛</a></li>
                           <li class="iconlink-01"><a href="https://www.facebook.com/cw23250227" title="前往采葳的FB粉絲專頁" rel="external">FB粉絲團</a></li>
                           <li class="iconlink-02"><a href="https://plus.google.com/u/0/b/107179778419657766208/107179778419657766208/posts" title="前往采葳的G+粉絲專頁" rel="external">Google+專頁</a></li>
-                          <li class="iconlink-03"><a href="#" title="加入采葳的Line帳號">Line官方帳號</a></li>
+                          <li class="iconlink-03"><a href="#box_linefriend" title="加入采葳的Line帳號" class="fancybox">Line官方帳號</a></li>
                           <li class="iconlink-04"><a href="mailto:123@123.com" title="聯絡我們">聯絡我們</a></li>
                       </ul>
                  </div>
@@ -123,7 +124,7 @@
                              </div>
                           </li>
                           <li>
-                             <a href="#" class="nav_08">預約諮詢</a>
+                             <a href="#box_message" class="nav_08 fancybox" >預約諮詢</a>
                           </li>
                         </ul>
                    </nav>
@@ -146,6 +147,7 @@
                 <section id="box_muti">
                      <div class="box_inews">
                         <h3>最新消息</h3>
+                        <a href="content/news_list.html" title="了解更多" class="btn_imore">more</a>
                         <ul>
                         	<li><a href="content/news_main.html">‧ 重返豐潤肌！玻尿酸、微晶瓷、水微晶3大熱門填補材質比較</a></li>
                         	<li><a href="content/news_main.html">‧ 常用洗臉機小心變成過敏肌！　不可不知的洗臉機使用方法</a></li>
@@ -156,6 +158,7 @@
                      </div>
                      <div class="box_iclinic">
                          <h3>熱門療程</h3>
+                         <a href="content/clinic.html" title="了解更多" class="btn_imore">more</a>
                          <ul>
                         	<li><a href="content/clinic.html">‧ 晶亮瓷晶亮瓷</a></li>
                         	<li><a href="content/clinic.html">‧ 肉毒桿菌肉毒桿菌</a></li>
@@ -216,6 +219,62 @@
                 </div> 
             </section>
             
+            <div class="btn_message">
+               <a href="#box_message" class="fancybox">線上留言 Online Message</a>
+            </div>
+            
+           <div id="box_message">
+               <h3>Message 線上留言或預約 <span>有任何療程問題，請留下您的連絡資訊，我們會儘快回覆供你參考。</span></h3>
+               <form action="">
+                 <table width="100%" class="box_message">
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>姓名：</td>
+                         <td><input name="name" type="text" class="text_area w350"></td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>性別：</td>
+                         <td>
+                             <input name="sex" type="radio" value="female">女性
+                             <input name="sex" type="radio" value="male">男性
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>生日：</td>
+                         <td>西元 <input name="year" type="text" class="text_area w78"> 年 
+                                 <input name="month" type="text" class="text_area w78"> 月 
+                                 <input name="date" type="text" class="text_area w78"> 日
+                         </td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>連絡電話：</td>
+                         <td><input name="phone" type="text" class="text_area w350"></td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>Email：</td>
+                         <td><input name="email" type="text" class="text_area w350"></td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>意見留言：<br></td>
+                         <td><textarea name="message" cols="47" rows="4"  class="text_area">&nbsp;</textarea></td>
+                       </tr>
+                       <tr>
+                         <td class="ttd"><span class="pot_star">*</span>驗證碼：</td>
+                         <td><img src="images/captcha_image.jpg" alt="*"><input name="code" type="text" class="text_area w100"></td>
+                       </tr>
+                 </table>
+                 <div class="box_buttom">
+                    <input name="btn_send" type="submit" class="btn_empty" value="確認送出">
+                    <input name="btn_send" type="reset" class="btn_empty" value="取消重填">
+                 </div>
+               </form>
+            </div>
+            
+            <div id="box_linefriend">
+               <h3>一起Line吧！</h3>
+               <p>歡迎加入采葳的Line群組，隨時隨地接收采葳的最新動態。</p>
+               <img src="images/my_qrcode.jpg" alt="采葳Line官方帳號">
+            </div>
+            
             
          </div><!--//end #container-->
       </div>
@@ -253,6 +312,12 @@ $(this).find(".sub").css({width:rowWidth})},timeout:500,out:function(){$(this).f
 <script src="script/jquery.ui.totop.js"></script>
 <script src="script/easing.js"></script>
 <script> $(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})}); </script>
+<script src="script/jquery.fancybox.pack.js"></script>
+<script>
+$(document).ready(function(){$(".fancybox").fancybox();$(".fancybox-effects-a").fancybox({helpers:{title:{type:"outside"},overlay:{speedOut:0}}});$(".fancybox-effects-b").fancybox({openEffect:"none",closeEffect:"none",helpers:{title:{type:"over"}}});$(".fancybox-effects-c").fancybox({wrapCSS:"fancybox-custom",closeClick:!0,openEffect:"none",helpers:{title:{type:"inside"},overlay:{css:{background:"rgba(238,238,238,0.85)"}}}});$(".fancybox-effects-d").fancybox({padding:0,openEffect:"elastic",openSpeed:150,
+closeEffect:"elastic",closeSpeed:150,closeClick:!0,helpers:{overlay:null}});$(".fancybox-buttons").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",closeBtn:!1,helpers:{title:{type:"inside"},buttons:{}},afterLoad:function(){this.title="Image "+(this.index+1)+" of "+this.group.length+(this.title?" - "+this.title:"")}});$(".fancybox-thumbs").fancybox({prevEffect:"none",nextEffect:"none",closeBtn:!1,arrows:!1,nextClick:!0,helpers:{thumbs:{width:50,height:50}}});$(".fancybox-media").attr("rel",
+"media-gallery").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",arrows:!1,helpers:{media:{},buttons:{}}});$("#fancybox-manual-a").click(function(){$.fancybox.open("1_b.jpg")});$("#fancybox-manual-b").click(function(){$.fancybox.open({href:"iframe.html",type:"iframe",padding:5})});$("#fancybox-manual-c").click(function(){$.fancybox.open([{href:"1_b.jpg",title:"My title"},{href:"2_b.jpg",title:"2nd title"},{href:"3_b.jpg"}],{helpers:{thumbs:{width:75,height:50}}})})});    
+</script>
 <script src="script/jquery.lazyload.js"></script>
 <script src="script/web_set.js"></script>
 </body>
