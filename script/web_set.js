@@ -64,3 +64,26 @@ alert('您的瀏覽器不支持自動自動設置首頁, 請使用瀏覽器菜�
 }
 }
 }	  
+
+//側邊選單
+var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
+showDelay = 0;
+listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
+listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
+var arrow = null;
+if (document.createElement && document.documentElement)
+{
+ arrow = document.createElement('span');
+ arrow.appendChild(document.createTextNode('>'));
+ arrow.className = 'subind';
+}
+addReadyEvent(new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
+
+//FB分享按鈕
+ (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));	

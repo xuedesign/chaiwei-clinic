@@ -251,11 +251,64 @@ footer li{
 .fmain_right a:hover{ text-decoration:none; color:#f50}					
 	 
 /* 2.5 頁面中間區塊 */	
-#container{ display:block; width:100%}				
+#container{ display:block; width:100%}
+#box_content{
+	display:block;
+	width:100%;
+	background:#FFF;
+	padding:15px 0 30px 0}
+#my_content{
+	display:block;
+	position:relative;
+	width:1110px;
+	margin:0 auto;
+	padding:0 85px}
+#maincont{
+	display:block;
+	float:right;
+	width:850px;
+	padding-top:15px}
+#bar_tools{
+	display:block;
+	width:1085px;
+	padding:5px 85px 0 0;
+	margin-bottom:15px}
+.bar_cookie{
+	display:block;
+	float:left;
+	width:50%;
+	font-size:1em;
+	line-height:30px;
+	color:#5aa11b}	
+.bar_cookie a{
+	color:#5aa11b;
+	text-decoration:none}
+.bar_cookie a:hover{
+	color:#f50;
+	text-decoration:none}	
+.bar_cookie span{
+	font-weight:bold;
+	color:#307A00}
+.bar_socail{
+	display:block;
+	float:right;
+	width:50%;
+	text-align:right}								
 
 /* 2.6 側邊產品選單 */
-aside{}
+aside{
+	display:block;
+	float:left;
+	width:200px}
+aside h3{ display:none}	
+#mainav{
+	display:block;
+	position: absolute;
+	top:50px;
+	left:85px;
+	width:200px}		
 
+/* 2.7 返回頂端紐*/
 #toTop{
 	display:none;
 	text-decoration:none;
@@ -283,7 +336,7 @@ aside{}
 /* 3.內頁結構
 ===============================================================================================*/
 /*3-1 首頁*/
-#main_index{
+#box_main{
 	display:block;
 	width:1106px;
 	background:#fff;
@@ -292,6 +345,7 @@ aside{}
 #banner_slider{
 	display:block;
 	width:1059px;
+	height:491px;
 	margin:0 auto}
 #banner_slider h2{ display:none}	
 #beauty_diary{
@@ -501,10 +555,18 @@ aside{}
 	cursor:pointer}
 .btn_empty:hover{ background:#317B00}	
 	 																 
-
-/*3-2 產品頁*/
+/*3-2 關於采葳*/
 						
 
-/*3-3 聯絡我們*/
+/*3-3 最新消息+媒體名人*/
+#maincont h3{
+	display:block;
+	background: url(../images/icon_titlepot.png) 0 2px no-repeat;
+	border-bottom:2px solid #D9D9D7;
+	font-size:1.438em;
+	line-height:30px;
+	color:#307a00;
+	padding:0 0 15px 30px}
+
 
 						   

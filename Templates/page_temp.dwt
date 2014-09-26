@@ -1,5 +1,5 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/page_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 <head>
 <meta charset="utf-8" lang="zh-tw">
 <meta name="description" content="100%皮膚醫美專科團隊，完美結合醫學與美容，提供最安全有效的治療，尊榮貼心的服務，讓您放心將自己交給采葳時尚醫美。"/>
@@ -7,9 +7,9 @@
 <meta name="Author" content="xuedesign" />
 <link rel="shortcut icon"  href="../images/favicon.ico"/>
 <link rel="icon" href="../images/favicon.ico"/>
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>最新消息│采葳時尚醫美診所，微整形,雷射光療,美體雕塑,美肌保養,整形外科</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <link rel="stylesheet" href="../css/reset.css"/>
 <link rel="stylesheet" href="../css/xuemain_201409.css"/>
 <link rel="stylesheet" href="../css/flexslider.css"/>
@@ -22,8 +22,8 @@
 <!--[if lte IE 6]>
 <script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
 <![endif]-->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                  <div class="top_right">
                       <p>預約專線 02-2325-0227</p>
                       <ul class="box_link">
-                          <li><a href="clinic.html" title="診所資訊">診所位置</a>│</li>
+                          <li><a href="../content/clinic.html" title="診所資訊">診所位置</a>│</li>
                           <li class="pr_10"><a href="#" onclick="addfavorite()" title="加入我的最愛">加入我的最愛</a></li>
                           <li class="iconlink-01"><a href="https://www.facebook.com/cw23250227" title="前往采葳的FB粉絲專頁" rel="external">FB粉絲團</a></li>
                           <li class="iconlink-02"><a href="https://plus.google.com/u/0/b/107179778419657766208/107179778419657766208/posts" title="前往采葳的G+粉絲專頁" rel="external">Google+專頁</a></li>
@@ -53,15 +53,15 @@
                              <a href="../index.html" class="nav_01">首頁</a>
                           </li>
                           <li>
-                             <a href="about.html" class="nav_02">關於采葳</a>
+                             <a href="../content/about.html" class="nav_02">關於采葳</a>
                           </li>
                           <li>
                              <a href="#" class="nav_03">最新消息</a>
                              <div class="sub">
                                  <ul class="short_item">
                                      <li><h3>類別</h3></li>
-                                     <li><a href="news_list.html">活動消息</a></li>
-                                     <li><a href="news_list.html">媒體報導</a></li>
+                                     <li><a href="../content/news_list.html">活動消息</a></li>
+                                     <li><a href="../content/news_list.html">媒體報導</a></li>
                                  </ul>
                              </div>
                           </li>
@@ -70,7 +70,7 @@
                              <div class="sub service">
                                   <ul>
                                       <li><h3>微整形</h3></li>
-                                      <li><a href="service.html">晶亮瓷</a></li>
+                                      <li><a href="../content/service.html">晶亮瓷</a></li>
                                       <li><a href="#">玻尿酸</a></li>
                                       <li><a href="#">肉毒桿菌</a></li>
                                       <li><a href="#">水微晶</a></li>
@@ -112,17 +112,17 @@
                              </div>     
                           </li>
                           <li>
-                             <a href="doctor_list.html" class="nav_05">醫師團隊</a>
+                             <a href="../content/doctor_list.html" class="nav_05">醫師團隊</a>
                           </li>
                           <li>
-                             <a href="clinic.html" class="nav_06">門診資訊</a>
+                             <a href="../content/clinic.html" class="nav_06">門診資訊</a>
                           </li>
                           <li>
                              <a href="#" class="nav_07">媒體名人</a>
                              <div class="sub">
                                  <ul class="short_item">
                                      <li><h3>類別</h3></li>
-                                     <li><a href="media_list.html">藝人模特兒</a></li>
+                                     <li><a href="../content/media_list.html">藝人模特兒</a></li>
                                      <li><a href="#">網路名人</a></li>
                                      <li><a href="#">素人分享</a></li>
                                  </ul>
@@ -151,32 +151,30 @@
             
             <section id="box_content">
               <div id="my_content">
-              <!-- InstanceBeginEditable name="main-content" -->
-                <div id="bar_tools">
-                    <div class="bar_cookie">
-                       <a href="../index.html" title="返回首頁">首頁</a>&gt;最新消息&gt;<span>活動消息</span>
-                    </div>
-                    <div class="bar_socail">
-                        <div class="fb-like" data-href="http://www.chaiwei-clinic.com/" data-width="150px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div><!--  data-href內的網址可否隨頁面而變?? -->
-                    </div>
-                </div>
-                
-                <aside><!-- 側邊選單 -->
-                  <h3>網站次選單</h3>
+              <!-- TemplateBeginEditable name="main-content" -->
+              
+                <aside>
+                  <!-- 側邊選單 -->
                   <nav id="mainav" class="stickybox">
                     <ul id="listMenuRoot" class="menulist" >
-                      <li><a href="#" class="navin">活動消息</a></li><!-- 若在該單元時，側邊選單的連結請幫我加上 "class="navin" -->
-                      <li><a href="#">媒體報導</a></li>
+                      <li><a href="#">11111111111</a>
+                        <ul>
+                          <li><a href="../content/products/linear-guideway/characteristics.html">特性說明</a></li>
+                          <li><a href="../content/products/linear-guideway/MSA.html">MSA重負荷型</a></li>
+                          <li><a href="../content/products/linear-guideway/MSB.html">MSB低組裝型</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">222222222222</a></li>
+                      <li><a href="#">3333333333</a></li>
                     </ul>
                   </nav>
                 </aside>
-                
-                <div id="maincont"><!-- 中間主內文區 -->
-                    <h3>活動消息</h3>
+                <div id="maincont" style="display:block; min-height:1500px">
+                  <!-- 中間主內文區 -->
                 </div>
                 <br class="clean">
                 
-                <!-- InstanceEndEditable -->
+                <!-- TemplateEndEditable -->
               </div>
             </section><!--//end #box_mycontent-->
             
@@ -288,4 +286,4 @@ $(function(){$(".stickybox").stickySidebar({speed:400,easing:"easeInOutQuad",con
 <script src="../script/jquery.lazyload.js"></script>
 <script src="../script/web_set.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>
