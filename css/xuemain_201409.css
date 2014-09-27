@@ -270,8 +270,8 @@ footer li{
 	padding-top:15px}
 #bar_tools{
 	display:block;
-	width:1085px;
-	padding:5px 85px 0 0;
+	width:1105px;
+	padding:5px 65px 0 0;
 	margin-bottom:15px}
 .bar_cookie{
 	display:block;
@@ -567,6 +567,102 @@ aside h3{ display:none}
 	line-height:30px;
 	color:#307a00;
 	padding:0 0 15px 30px}
+.mylist li{
+	display:block;
+	padding:20px 0;
+	border-bottom:1px solid #CCC}
+.mylist .list_photo{
+	display:block;
+	float:left;
+	width:258px;
+	margin-right:20px}
+.mylist .list_info{
+	display:block;
+	float:right;
+	width:542px}
+.mylist h4{
+	font-size:1.125em;
+	line-height:28px;
+	font-weight:normal;
+	padding-bottom:8px}
+.mylist p{
+	font-size:0.938em;
+	line-height:22px}
+.mylist .list_info span{
+	display:block;
+	float:right;
+	font-size:.813em;
+	margin-top:15px}
+
+/*頁碼*/
+#digg { padding: 3px; margin: 30px 15px 15px; text-align: center}
+#digg a { 
+    border: #5AA11B 1px solid; 
+	padding:5px 10px; 
+	margin: 5px; 
+	color: #252136;
+	background:#FFF; 
+	text-decoration: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+#digg a:hover { border: #5AA11B 1px solid; color:#fff; background: #CAD6C0}
+#digg a:active { border: #5AA11B 1px solid; color: #8c8c8c}
+#digg span.current {
+	border: #5AA11B 1px solid; 
+	padding:5px 10px; 
+	font-weight: bold; 
+	margin: 5px; 
+	color: #fff; 
+	background-color: #5AA11B;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+#digg span.disabled {
+	border: #5AA11B 1px solid; 
+	padding:5px 10px; 
+	margin: 2px; 
+	color: #999;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background:#fff}
+
+#my_textbox{
+	display:block;
+	padding:30px 0}
+#my_textbox p{
+	font-size:.938em;
+	line-height:25px;
+	padding-bottom:20px}
+#my_textbox img{ margin-bottom:10px}	
+#my_textbox ul, #my_textbox ol{
+	padding: 0 30px}	
+#my_textbox ul li, #my_textbox ol li{
+	font-size:.938em;
+	line-height:25px;
+	padding:5px 0;
+	border-bottom:1px dashed #CCCCCC}
+#my_textbox ul li{ list-style: disc outside}	
+#my_textbox ol li{ list-style: decimal outside}
+.btn_back a{
+	display:block;
+	float:right;
+	padding:8px 20px;
+	font-size:.938em;
+	color:#FFF;
+	background:#5aa11b;
+	text-decoration:none;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+.btn_back a:hover{
+	background:#f50;
+	text-decoration:none;
+	color:#FFF}	
+
+#maincont>#ad_list ul{ margin-top:10px}
+#maincont>#ad_list li img{ width:260px}		 			
 
 
 						   
