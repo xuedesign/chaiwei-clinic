@@ -400,7 +400,7 @@ aside h3{ display:none}
 	padding:25px 0 0 30px}
 #ad_list{
 	display:block;
-	padding-top:30px}
+	padding:30px 0}
 #ad_list h3{ display:none}
 #ad_list li{
 	display:inline;
@@ -541,9 +541,9 @@ aside h3{ display:none}
 	text-align:center}
 .btn_empty{
 	display:inline-block;
-	padding:5px 30px;
+	padding:5px 20px;
 	margin:0 10px;
-	background:#6DBA3B;
+	background:#5aa11b/*#6DBA3B*/;
 	border:none;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -553,7 +553,7 @@ aside h3{ display:none}
 	letter-spacing:1px;
 	color:#FFF;
 	cursor:pointer}
-.btn_empty:hover{ background:#317B00}	
+.btn_empty:hover{ background:#f50/*#317B00*/}	
 	 																 
 /*3-2 關於采葳*/
 						
@@ -593,6 +593,41 @@ aside h3{ display:none}
 	float:right;
 	font-size:.813em;
 	margin-top:15px}
+.my_table{
+	width:100%;
+	border-collapse: collapse; 
+	border-spacing: 1px;
+	border:1px solid #e6e6e6}
+.my_table th{
+	font-size:1.25em;
+	color:#5aa11b;
+	background:#f8f8f8;
+	text-align:left;
+	padding:8px 15px}
+.my_table td{
+	position:relative;
+	padding:8px 5px;
+	border:1px solid #e6e6e6;}
+.my_table img{ margin:2px 0 0 5px}
+.my_table h4{
+	font-size:1em;
+	line-height:25px;
+	padding:5px 7px}
+.my_table p{
+	display:block;
+	height:43px;
+	overflow:hidden;
+	font-size:0.813em;
+	line-height:22px;	
+    padding:0 7px}
+.my_table .btn_more{
+	display:block;
+	text-align:right;
+	font-size:0.813em;
+	line-height:25px;
+	padding:5px 15px 0 0}
+#down_message .box_message{ margin:15px 0}
+				
 
 /*頁碼*/
 #digg { padding: 3px; margin: 30px 15px 15px; text-align: center}
