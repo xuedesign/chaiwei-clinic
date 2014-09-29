@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="../css/flexslider.css"/>
 <link rel="stylesheet" href="../css/listmenu_o.css">
 <link rel="stylesheet" href="../css/jquery.fancybox.css"/>
+<link rel="stylesheet" href="../css/fancybox-thumbs.css">
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -278,6 +279,7 @@ $(document).ready(function(){$(".fancybox").fancybox();$(".fancybox-effects-a").
 closeEffect:"elastic",closeSpeed:150,closeClick:!0,helpers:{overlay:null}});$(".fancybox-buttons").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",closeBtn:!1,helpers:{title:{type:"inside"},buttons:{}},afterLoad:function(){this.title="Image "+(this.index+1)+" of "+this.group.length+(this.title?" - "+this.title:"")}});$(".fancybox-thumbs").fancybox({prevEffect:"none",nextEffect:"none",closeBtn:!1,arrows:!1,nextClick:!0,helpers:{thumbs:{width:50,height:50}}});$(".fancybox-media").attr("rel",
 "media-gallery").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",arrows:!1,helpers:{media:{},buttons:{}}});$("#fancybox-manual-a").click(function(){$.fancybox.open("1_b.jpg")});$("#fancybox-manual-b").click(function(){$.fancybox.open({href:"iframe.html",type:"iframe",padding:5})});$("#fancybox-manual-c").click(function(){$.fancybox.open([{href:"1_b.jpg",title:"My title"},{href:"2_b.jpg",title:"2nd title"},{href:"3_b.jpg"}],{helpers:{thumbs:{width:75,height:50}}})})});    
 </script>
+<script src="../script/jquery.fancybox-thumbs.js"></script>
 <script src="../script/stickysidebar.jquery.js"></script>
 <script>
 $(function(){$(".stickybox").stickySidebar({speed:400,easing:"easeInOutQuad",constrain:!0})});

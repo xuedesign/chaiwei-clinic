@@ -556,7 +556,16 @@ aside h3{ display:none}
 .btn_empty:hover{ background:#f50/*#317B00*/}	
 	 																 
 /*3-2 關於采葳*/
-						
+.lightbox_photo{}
+.lightbox_photo li{
+	display:block;
+	float:left;
+	width:144px;
+	height:110px;
+	overflow:hidden;
+	padding:0 10px;
+	margin:10px 0}
+.lightbox_photo li img{ width:144px}						
 
 /*3-3 最新消息+媒體名人*/
 #maincont h3{
@@ -663,10 +672,10 @@ aside h3{ display:none}
 	border-radius: 8px;
 	background:#fff}
 
-#my_textbox{
+#my_textbox, .my_textbox{
 	display:block;
 	padding:30px 0}
-#my_textbox p{
+#my_textbox p, .my_textbox p{
 	font-size:.938em;
 	line-height:25px;
 	padding-bottom:20px}
