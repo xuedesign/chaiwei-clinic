@@ -40,6 +40,7 @@ img{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
 .pr_10{ padding-right:10px}
+.w100{ width:100px}
 
 
 
@@ -706,7 +707,65 @@ aside h3{ display:none}
 	color:#FFF}	
 
 #maincont>#ad_list ul{ margin-top:10px}
-#maincont>#ad_list li img{ width:260px}		 			
+#maincont>#ad_list li img{ width:260px}
+
+/*3-4 服務項目*/
+
+/*3-5 醫師團隊*/
+
+/*3-6 診所資訊*/
+.info_photo{
+	display:block;
+	float:left;
+	width:350px;
+	height:275px;
+	padding:10px;
+	background:#FFF;
+	border:1px solid #CCC;
+	margin:15px 0 30px 0}
+.info_list{
+	display:block;
+	float:right;
+	width:440px;
+	padding:30px 0 0 30px}
+.info_list li{
+	font-size:.938em;
+	line-height:25px;
+	background:url(../images/pot_green.png) 0 5px no-repeat;
+	margin-bottom:15px;
+	padding-left:30px}
+.info_list li span{
+	font-weight:bold;
+	font-size:1.063em;
+	padding-bottom:8px;
+	color:#5AA11B}	
+.my_map{
+	display:block;
+	width:800px;
+	height:266px;
+	margin:15px auto 30px auto;
+	border:1px solid #999}
+.my_calendar{
+	width:800px;
+	margin:15px auto 30px auto;
+	border-collapse: collapse; 
+	border-spacing: 1px;
+	border:1px solid #dad2cd}
+.my_calendar th{
+	border-spacing: 1px;
+	border:1px solid #dad2cd;
+	padding:8px;
+	background: url(../images/bg_calendar.jpg) no-repeat;
+	font-weight:bold;
+	letter-spacing:1px}
+.my_calendar td{
+	font-size:0.938em;
+	padding:10px;
+	text-align:center;
+	vertical-align:middle;
+	border-spacing: 1px;
+	border:1px solid #dad2cd}
+.my_calendar .w100{ font-weight:bold}				 			
 
 
 						   
