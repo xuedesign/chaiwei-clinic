@@ -557,7 +557,6 @@ aside h3{ display:none}
 .btn_empty:hover{ background:#f50/*#317B00*/}	
 	 																 
 /*3-2 關於采葳*/
-.lightbox_photo{}
 .lightbox_photo li{
 	display:block;
 	float:left;
@@ -761,6 +760,72 @@ aside h3{ display:none}
 .photo_before img, .photo_after img{ width:146px}		
 
 /*3-5 醫師團隊*/
+#list_doctor{}
+#list_doctor li{
+	display:block;
+	position:relative;
+	float:left;
+	width:185px;
+	height:200px;
+	border:1px solid #ccc;
+	margin:15px 11px 0 12px;
+	padding:15px 15px 15px 200px}
+.cover_doctor{
+	display:block;
+	position:absolute;
+	top:15px;
+	left:15px;
+	width:150px;
+	height:150px;
+	padding:8px;
+	border:1px solid #CCC}
+.cover_doctor img{ width:150px}
+#list_doctor h4{
+	font-size:1.125em;
+	line-height:25px;
+	color:#5AA11B}
+#list_doctor p{
+	display:block;
+	height:90px;
+	overflow:hidden;
+	font-size:0.938em;
+	line-height:22px;
+	margin:10px 0 20px 0}
+#doctor_info{
+	display:block;
+	margin-bottom:30px}	
+.info_left{
+	display:block;
+	float:left;
+	width:330px}
+.info_left img{ width:330px; border:1px solid #F0F0F0}
+.title_doctor{
+	display:block;
+	font-size:1.125em;
+	/*font-weight:bold;*/
+	color:#fff;
+	text-align:center;
+	letter-spacing:1px;
+	background:#5AA11B;
+	padding:5px 20px;
+	margin:10px 0 15px 150px}	
+.info_right{
+	display:block;
+	float:right;
+	width:490px;
+	padding-left:30px}
+.info_right h4{
+	font-size:1.25em;
+	color:#5AA11B;
+	font-weight:normal;
+	padding:15px 0 8px 30px}
+.info_right ul{
+	display:block;
+	padding:0 0 15px 55px}
+.info_right li{
+	font-size:.938em;
+	line-height:25px;
+	list-style:disc outside}				
 
 /*3-6 診所資訊*/
 .info_photo{
@@ -814,7 +879,4 @@ aside h3{ display:none}
 	vertical-align:middle;
 	border-spacing: 1px;
 	border:1px solid #dad2cd}
-.my_calendar .w100{ font-weight:bold}				 			
-
-
-						   
+.my_calendar .w100{ font-weight:bold}
