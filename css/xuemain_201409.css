@@ -710,6 +710,55 @@ aside h3{ display:none}
 #maincont>#ad_list li img{ width:260px}
 
 /*3-4 服務項目*/
+#box_compare{
+	display:block;
+	width:850px;}
+#box_compare h3{ display:none}
+#box_compare ul{
+	display:block}
+#box_compare li{
+	display:block;
+	position:relative;
+	float:left;
+	width:405px;
+	height:340px;
+	overflow:hidden;
+	background:url(../images/bg_compare.png) no-repeat;
+	border-bottom:1px dashed #CCC;
+	margin:0 10px 20px 10px}
+#box_compare h4, #box_compare p, #box_compare .photo_before, #box_compare .photo_after{
+	display:block;
+	position:absolute;}	
+#box_compare h4{
+	top:250px;
+	left:15px;
+	width:390px;
+	font-size:1em;
+	line-height:30px;
+	color:#5AA11B;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap}
+#box_compare p{
+	top:285px;
+	left:15px;
+	width:370px;
+	height:48px;
+	overflow:hidden;
+	font-size:0.813em;
+	line-height:22px}
+.photo_before, .photo_after{
+	width:146px;
+	height:146px;
+	overflow:hidden;
+	border:1px solid #CCC}
+.photo_before{
+	top:22px;
+	left:15px}
+.photo_after{
+	top:22px;
+	left:226px}		
+.photo_before img, .photo_after img{ width:146px}		
 
 /*3-5 醫師團隊*/
 
