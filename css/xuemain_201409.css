@@ -446,13 +446,14 @@ aside h3{ display:none}
 .main_diary .cover_diary img{
 	display:block;
 	width:258px}
-.main_diary h4{
+.main_diary h4 a{
 	display:block;
 	font-size:1em;
 	font-weight:normal;
 	line-height:25px;
 	color:#66B5B2;
 	margin-bottom:10px}
+.main_diary h4 a:hover{ color:#f50}	
 .main_diary p{
 	display:block;
 	height:45px;
