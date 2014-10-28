@@ -618,6 +618,8 @@ aside h3{ display:none}
 	padding:8px 15px}
 .my_table td{
 	position:relative;
+	width:33%;
+	height:280px;
 	padding:8px 5px;
 	border:1px solid #e6e6e6;}
 .my_table img{ margin:2px 0 0 5px}
@@ -883,3 +885,6 @@ aside h3{ display:none}
 	border-spacing: 1px;
 	border:1px solid #dad2cd}
 .my_calendar .w100{ font-weight:bold}
+
+/*2014-10-20 修改*/
+#RadioButtonList1 tr, #Content_RadioButtonList1 tr{ border-bottom:none}
