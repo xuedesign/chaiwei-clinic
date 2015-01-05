@@ -394,6 +394,7 @@ aside h3{ display:none}
 	overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap}
+#box_muti .box_iclinic h2{ font-weight:normal}	
 .box_imedia{
 	display:block;
 	float:right;
@@ -460,12 +461,13 @@ aside h3{ display:none}
 	color:#66B5B2;
 	margin-bottom:10px}
 .main_diary h4 a:hover{ color:#f50}	
-.main_diary p{
+.main_diary p, .main_diary h2{
 	display:block;
 	height:45px;
 	overflow:hidden;
 	font-size:0.813em;
-	line-height:22px;}
+	line-height:22px;
+	font-weight:normal}
 .main_diary	.btn_more{
 	display:block;
 	position:absolute;
